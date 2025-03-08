@@ -1,10 +1,20 @@
 # SGTradeExInternAssignment
-src folder contains code for backend
-frontend folder contains code for frontend
+1. src folder contains code for backend
+2. frontend folder contains code for frontend
 
 # How to run
 1. npm run start:dev in the root directory
 2. npm run dec in the frontend directory
 
 # Things to note
-valid prepopulated IMOs are 9000003, 9000015, 9000027, 9000039, 9000041, 9000053, 9000065, 9000077, 9000089, 9000091.
+valid prepopulated IMOs are 
+1. 9000003
+2. 9000015
+3. 9000027
+4. 9000039
+5. 9000041
+6. 9000053
+7. 9000065
+8. 9000077
+9. 9000089
+10. 9000091
