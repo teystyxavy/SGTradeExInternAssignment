@@ -1,0 +1,27 @@
+.App {
+  background-color: #eee;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.search-bar-container{
+  padding-top: 20vh;
+  width: 60%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
