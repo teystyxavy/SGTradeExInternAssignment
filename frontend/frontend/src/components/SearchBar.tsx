@@ -13,7 +13,9 @@ export const SearchBar = ({ setResults } : any) => {
             fetch("http://localhost:3000/pilotage/" + parseInt(value))
             .then((response) => {
                 if(response.status === 400) {
-                    throw new Error(response.statusText);
+                    throw new Error('Unable to retrieve pilotage information, vessel IMO is invalid');
+                } else if(response.status === 404) {
+                    throw new Error('Unable to retrieve pilotage information, no vessel with given IMO');
                 }
                 return response.json()
             }).then((json) => {
