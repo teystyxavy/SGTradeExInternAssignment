@@ -2,9 +2,13 @@
 1. src folder contains code for backend
 2. frontend folder contains code for frontend
 
+# Tech Stack
+1. frontend: React.js and Typescript
+2. backend: Express.js and Typescript
+
 # How to run
 1. npm run start:dev in the root directory
-2. npm run dec in the frontend directory
+2. npm run dev in the frontend directory
 
 # Things to note
 valid prepopulated IMOs are 
