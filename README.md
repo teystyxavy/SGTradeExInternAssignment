@@ -22,3 +22,8 @@ valid prepopulated IMOs are
 8. 9000077
 9. 9000089
 10. 9000091
+
+# Assumptions
+1. Required endpoint's domain of "uat.engineering.sgtradex.net" will be bought after deployment, so I edited the backend API endpoint to reflect the backend
+2. User would already know the IMO of the vessel they are looking for
+3. User would know the destination and location codes
