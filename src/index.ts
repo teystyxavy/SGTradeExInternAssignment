@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import taskRoutes from './routes/tasks';
+import taskRoutes from './routes/routes';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,8 +12,7 @@ app.use(cors({
 }));
 
 app.use(express.json()); // enable json parsing in req body
-app.use('/pilotage', taskRoutes); //mount Task API Routes
-
+app.use('/api/v1/pilotage', taskRoutes); //mount Task API Routes
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Pilotage Service Data Query Interface');

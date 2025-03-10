@@ -1,4 +1,5 @@
 export interface Data{
+    pilotage_name: string;
     pilotage_imo: number;
     pilotage_cst_dt_time: Date;
     pilotage_end_dt_time: Date;

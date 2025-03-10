@@ -4,6 +4,9 @@ import { Data } from '../models/pilotage_data';
 const router = Router();
 
 const validIMOs = [9000003, 9000015, 9000027, 9000039, 9000041, 9000053, 9000065, 9000077, 9000089, 9000091];
+const IMONames = ["HarborGuard Pilotage", "True North Navigators", "Seafarer Pilot Solutions", "Waypoint Maritime Services", 
+                    "AeroNaut Pilotage", "Guiding Star Pilotage", "CompassEdge Pilot Services", "Safe Passage Navigators",
+                    "Blue Horizon Pilotage", "PortMaster Guidance"];
 
 const generateRandomDate = (): Date => {
     const start = new Date();
@@ -16,6 +19,7 @@ let dataList: Data[] = [];
 
 for (let i = 0; i < 100; i++) {
     dataList.push({
+        pilotage_name: IMONames[i % IMONames.length],
         pilotage_imo: validIMOs[i % validIMOs.length],
         pilotage_cst_dt_time: generateRandomDate(),
         pilotage_end_dt_time: generateRandomDate(),
@@ -54,6 +58,7 @@ const validateIMO = (imo: string): boolean => {
 
 router.post('/', (req: Request, res: Response) => {
     const data: Data = {
+        pilotage_name: req.body.pilotage_name,
         pilotage_imo: req.body.pilotage_imo,
         pilotage_cst_dt_time: req.body.pilotage_cst_dt_time,
         pilotage_end_dt_time: req.body.pilotage_end_dt_time,

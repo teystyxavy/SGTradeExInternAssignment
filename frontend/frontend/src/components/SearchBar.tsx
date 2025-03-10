@@ -10,7 +10,7 @@ export const SearchBar = ({ setResults } : any) => {
         if(value.trim()) {
             setError("");
 
-            fetch("http://localhost:3000/pilotage/" + parseInt(value))
+            fetch("http://localhost:3000/api/v1/pilotage/" + parseInt(value))
             .then((response) => {
                 if(response.status === 400) {
                     throw new Error('Unable to retrieve pilotage information, vessel IMO is invalid');

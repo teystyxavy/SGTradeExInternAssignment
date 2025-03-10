@@ -1,0 +1,18 @@
+.title-bar{
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.header{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.icon{
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    border-style: outset;
+}

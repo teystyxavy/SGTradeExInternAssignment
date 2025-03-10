@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { SearchBar } from './components/SearchBar'
 import { SearchResultsList } from './components/SearchResultsList'
+import { TitleBar } from './components/TitleBar';
 
 function App() {
   const [results, setResults] = useState([]);
@@ -9,9 +10,7 @@ function App() {
   return (
     <div className = "App">
       <div className="search-bar-container">
-        <header>
-          <h1>Pilotage Service Data Query Interface</h1>
-        </header>
+        <TitleBar></TitleBar>
         <SearchBar setResults={setResults}/>
         <SearchResultsList results={results}/>
       </div>
